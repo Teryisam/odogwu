@@ -1,0 +1,9 @@
+import { render, screen } from "@testing-library/react";
+import List from "./List";
+
+test("renders learn react link", () => {
+  render(<List />);
+  // const linkElement = screen.getByText(/Edit/i);
+  // expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Edit/i)).toBeInTheDocument();
+});
